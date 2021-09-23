@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep 23 20:16:54 2021
+
+Debi Arisandi
+065002100027
+Algo dan Pemograman
+Sistem Informasi
+
+"""
+print ("hitung luas ruangan")
+a=float(input("masukan panjang ruangan:"))
+b=float(input("masukan lebar ruangan:"))
+sendal=input('masukan satuan (meter atau inci:')
+
+luas= a*b
+print ("luas ruangan dengan panjang", a, "dan lebar", b,'adalah:',luas,sendal)
