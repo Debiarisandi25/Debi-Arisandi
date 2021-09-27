@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 27 12:18:29 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Pratikum Logaritma dan Pemograman 
+Prodi : Sistem Informasi
+
+"""
+#import math
+
+a = 11
+b = 6
+
+jumlah = a + b
+print('jumlah a ditambahkan dengan b adalah:',jumlah)
+selisih =  a - b
+print('selisih antara a dengan b adalah:',selisih)
+perkalian = a * b
+print('perkalian jumlah a dengan b adalah:',perkalian)
+sisa = a % b
+print('jumlah sisa pembagian hasi a dibagi b adalah:',sisa)
+bagi = a / b
+print('jumlah a dibagi b adalah:',bagi)
+pangkat = a**b
+print('hasil a dipangkatkan b adalah:',pangkat)
+import math
+print('hasil dari log(a) adalah:',(math.log10(a)))
