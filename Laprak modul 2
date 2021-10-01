@@ -1,0 +1,33 @@
+Created on Thu Sep 30 21:16:17 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+Algoritma dan pemograman
+
+"""
+
+print('hello everyone')
+print('welcome to my progam')
+print('inilah adalah pemograman menghitung jarak antara dua titik di permukaan bumi')
+
+import math 
+
+a1=float(input('masukan nilai latitude 1 : '))
+a1= math.radians(a1)
+a2=float(input('masukan nilai latitude 2 : '))
+a2= math.radians(a2)
+b1=float(input('masukan nilai longitude 1 :'))
+b1= math.radians(b1)
+b2=float(input('masukan nilai longitude 2 : '))
+b2=math.radians(b2)
+a=a2-a1
+b=b2-b1
+
+R  = 6371.01
+a = math.pow(math.sin(a/2),2)+math.cos(a1)*math.cos(a2)*math.pow(math.sin(b/2),2)
+c = 2*math.atan2(math.sqrt(a), math.sqrt(1-a))
+d = R*c
+
+print('jarak antara dua titik adalah ', d, 'kilometer')
+print('see u next time')
