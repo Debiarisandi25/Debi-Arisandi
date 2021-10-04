@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct  4 11:55:24 2021
+
+@author: Debi Arisandi 
+Nim : 065002100027
+Prodi : Sistem Informasi
+Algoritma dan Pemograman
+
+"""
+print('hi friends')
+
+a= int(input('masukan panjang sisi a :'))
+b= int(input('masukan panjang sisi b:'))
+c= int(input('masukan panjang sisi c:'))
+
+
+if ( a == b == c ):
+    print('ini merupakan segitiga sama sisi')
+elif (a==b or b==c or c==a): 
+    print('ini merupakan segitiga sama kaki')   
+
+else :
+    if ( a + b <= c) or ( a + b <= b) or ( b + c <=a):
+        print('ini bukan merupakan  segitiga')
+    else :
+        print('ini merupakan segitiga sembarangan')
