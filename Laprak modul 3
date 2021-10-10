@@ -1,0 +1,49 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct  8 19:11:07 2021
+
+@author: Debi Arisandi
+Nim :065002100027
+Prodi : Sistem Informasi
+Praktikum Algoritma dan Pemograman
+
+"""
+import math as o
+print('hi everyone')
+print('welcome to my progam ')
+
+x =float(input('nilai A : '))
+y =float(input('nilai B : '))
+z =float(input('nilai c : '))
+d=o.pow(y,2)-4*x*y
+
+
+if (d<0) and not (x==0):
+    print("persamaan kuadrat", x,'x^2','+',y,'x','+',z )
+    print("determinan = d",d)
+    print('merupakan akar imaginer')
+    a1 = -y/2*x
+    a2 = -y/2*x
+    print('akar a1=',a1,'+','akar',d,'/2','*',x)
+    
+elif(d==0) and not (x==0):
+    print("persamaan kuadrat ",x,"x^2", "+",y,"x","+",z)
+    print("determinan = d",d)
+    print("merupakan akar kembar")
+    x = -y/2*x
+
+elif  (d>0) and not (x==0):
+    print("persamaan kuadrat" ,x,'x^2','+',y,'x','+',z)
+    print("determinan = ",d)
+    print("memiliki akar yang berbeda")
+    a1 = (-y+o.sqrt(d))/(2*x)
+    a2 = (-y-o.sqrt(d))/(2*x)
+    print("akarx1",a1)
+    print("akar x2=",a2)
+    
+if (x==0):
+    print("ini bukan persamaan kuadrat")
+
+print("thank you")
+    
+
