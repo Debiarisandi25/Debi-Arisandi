@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 11 12:19:58 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+Praktikum Algoritma dan Pemograman
+
+"""
+
+a = int(input("masukan jumlah maksimal :"))
+for i in range (-1,a):
+     for j in range (-1,a-1):
+         print (a , end = ' ')
+         
+     a-=1
+     print ('')
+    
