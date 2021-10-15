@@ -1,0 +1,42 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 15 07:59:16 2021
+
+@author:Debi Arisandi
+Nim :065002100027
+Prodi : Sistem Informasi
+Praktikum Algoritma dan Pemograman
+
+"""
+
+print ("hi everybody")
+print ("welcome to my progam")
+
+x,y,z = 0,0,0
+while (x>-3):
+    x+=x
+    a = int(input("masukan bulan yang kamu pilih: "))
+    if (a>=13) or (a<=0) and not (a==-1) :
+        print ("masukan bulan yang sesuai!")
+        print ("ketik -1 untuk menghentikan progam")
+        
+    elif (a ==1 or a==3 or a==5 or a==7 or a==8 or a==10 or a==12):
+        print ("bulan ini memiliki hari berjumlah 31 hari ")
+        print ("kerik -1 untuk menghentikan progam ")
+    
+    elif (a==2):
+        b = int(input("masukan tahun yang kamu pilih:"))
+        if (y%4==0) and (b==2) :
+            print ("bulan ini memiliki hari berhumlah 29 hari")
+            print("ketik -1 untuk menghentikan progam ")
+        else  :
+            print("bulan ini memiliki hari berjumlah 28 hari")
+            print("ketik -1 untuk menghentikan progam")
+    elif (a==4 or a==6 or a==9 or a==11 ):
+        print("bulan ini memiliki hari berjumlah 30 hari")
+        print("ketik -1 untuk menghentikan progam ")
+        
+    if (a==-1):
+        print("progam ini terhenti")
+        print("terima kasih telah mengunjungi progam ini")
+        break;
