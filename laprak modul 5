@@ -1,0 +1,49 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct 20 14:26:38 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+Praktikum Algoritma dan Pemograman
+
+"""
+
+print("hello everyone")
+print("welcome to my progam")
+
+n = '0'
+total = 0
+
+while (n!=''):
+    age = int(input('enter your age :'))
+    if (age==-1):
+        break
+    if(age <=2 and age >=0):
+        total+=0
+        print('ticket price = free')
+        print('total ticket price:',total)
+        print(' click -1 if you want to pay for the ticket')
+    elif(age>=3 and age <=12):
+        print("ticket price = 14$")
+        total+= 14
+        print(' total ticket price:',total)
+        print('click -1 if you want to pay for the ticket')
+    elif(age>=65):
+        print("ticket price = 18$")
+        total+= 18
+        print('total ticket price:',total)
+        print('click -1 if you want to pay for the ticket')
+    else :
+        print('ticket price= 23$')
+        total+=23
+        print('total ticket price:',total)
+        print('click -1 if you want to pay for the ticket')
+        
+print('total ticket price to be paid',total)
+payment = int(input("enter your money:"))
+while (payment<total):
+    print("ndk cukup piti deh")
+    payment=int(input("enter your money:"))
+print('cashback:',payment-total,'$')
+print("thank you")
