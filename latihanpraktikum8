@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  8 15:10:14 2021
+
+@author: ASUS
+"""
+
+"""
+Created on Mon Nov  8 13:04:07 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi 
+Latihan 8 Praktikum Algoritma dan Pemograman 
+
+"""
+
+
+def prima(nilai):
+    for i in range (2,nilai):
+        if (nilai % i) == 0:
+            return print(nilai,"bukan bilangan prima/n",i,"kali",nilai//i,"=",nilai)
+        
+    else :
+       nilai == 2 and nilai == 3
+       return print(nilai," merupakan bilangan prima")
+         
+def Nonprima(nilai):
+    if nilai > 1:
+        prima(nilai)
+    else :
+        print(nilai,"bukanbilangan prima")
+        
+        
+nilai = int(input("masukan bilangan:"))
+Nonprima(nilai)
