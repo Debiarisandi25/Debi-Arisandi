@@ -1,0 +1,51 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Nov 10 19:27:40 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+laporan Praktikum Algoritma dan Pemograman
+
+"""
+print("hello everyone")
+print("welcome to my progam")
+
+f = False 
+
+def st(number) :
+    if number % 10 == 1 and not number in[11]:
+        print(number,"st")
+    else:
+        th(number)
+def nd(number):
+    if number % 10 == 2 and not number in[12]:
+        print(number,"nd")
+    else:
+        th(number)
+def rd(number):
+    if number % 10 == 3 and not number in[13]:
+        print(number,"rd")
+    else:
+        th(number)
+def th(number):
+    if(number % 10 >=4) or (number % 10 == 0) or number in [11,12,13]:
+        print(number,'th')
+    else :
+        if number % 10 == 1:
+            st(number)
+        elif number % 10 == 2:
+            nd(number)
+        elif number % 10 == 3:
+            rd(number)
+            
+while (not f):
+    print("ketik 0 untuk stop progam ")
+    number = int(input("enter your number:"))
+    if number == 0:
+        print('0 th')
+        f = True 
+    else :
+        th (number)
+
+print("thank you")
