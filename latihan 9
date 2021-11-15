@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 15 11:58:03 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+Latihan Praktikum Algoritma dan Pemograman 
+
+"""
+print("hello everyone")
+print("welcome to my progam ")
+
+def penjumlahan(number= 0, jml = 0, a = 1):
+    if (jml<= 0):
+        return 0
+    else :
+        angka = int(input("masukan bilangan ke-"+ str(a)+":"))
+        if(jml == 1):
+            return angka
+        else :
+           a+=1
+           return angka + penjumlahan (angka,jml-1,a)
+
+jumlah = int(input("enter total :"))
+nilai = penjumlahan (jml=jumlah)
+print("ini adalah hasil penjumlahannya:"+str(nilai))
