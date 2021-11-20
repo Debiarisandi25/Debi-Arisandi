@@ -1,0 +1,45 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov 20 17:25:03 2021
+
+@author: Debi Arisandi 
+Nim : 065002100027
+Prodi : Sitem Informasi
+laporan Praktikum Algoritma dan Pemograman 
+
+"""
+
+def pangkat(nomor,doble ) :
+    if nomor == 1:
+        return 1 
+    elif nomor == 0:
+        return 0
+    else :
+        if doble == 1:
+            return nomor 
+        elif doble == 0:
+            return 1
+        elif doble > 1 :
+            return nomor * pangkat(nomor,doble-1)
+        elif doble < 0 :
+            return 1/nomor * pangkat(nomor,doble-1)
+        else :
+            print("data invalid")
+def start(x=0,y=0):
+    print("ini merupakan progam perpangkatan")
+    x=int(input("masukan angka:"))
+    y=int(input('masukan pangkat:'))
+    hasil = pangkat(nomor = x,doble = y)
+    print("hasil dari ",x,"pangkat",y,"adalah :",hasil)
+    stop()
+
+def stop():
+    a=input("apakah anda ingin melakukan progam ini lagi?(ya/tidak)")
+    if a == "ya":
+        start()
+    elif a == "tidak":
+        print("thank you")
+    else :
+        print("data yang anda masukan salah")
+        stop()
+start()
