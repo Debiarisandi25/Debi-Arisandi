@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov 26 07:56:01 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+latihan Praktikum Algoritma dan Pemograman
+
+"""
+
+def write(biodata):
+    file = open ("biodata.txt","w")
+    file.write(biodata)
+    file.close()
+       
+def read():
+   file = open("biodata.txt","r")
+   text = file.read()
+   print(text)
+   file.close()
+
+
+a = (input("masukan namamu:"))
+b = (input("masukan umurmu:"))
+c = (input("masukan alamatmu:"))
+d = (input("masukan emailmu:"))
+e = (input("masukan dosen walimu:"))
+biodata ="a :{}\nb:{}\nc:{}\nd:{}\ne:{}".format(a,b,c,d,e,)
+print("")
+write(biodata)
+print("ini adalah data yang kamu masukan")
+read()
