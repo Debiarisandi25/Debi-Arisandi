@@ -1,0 +1,50 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 29 12:29:11 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+Latihan Praktikum Algoritma dan Pemograman 
+
+"""
+
+def bubbleSort(nlist):
+    for passnum in range(len(nlist)-1,0,-1):
+        for i in range(passnum):
+            if nlist[i]>nlist[i+1]:
+                temp = nlist[i]
+                nlist[i] = nlist[i+1]
+                nlist[i+1] = temp
+nlist = [87,56,34,23,89,15,2,200,28,31]
+bubbleSort(nlist)
+print(nlist)
+
+
+def binary_search(l, num_find):
+    mulai = 0
+    tamat = len(l) - 1
+    tengah = (mulai + tamat)//2
+    f = False
+    posisi = -1
+    while mulai <= tamat:
+        if l[tengah] == num_find:
+            f = True
+            posisi = tengah
+            break
+        if num_find > l[tengah]:
+            mulai = tengah + 1
+            tengah = (mulai + tamat)//2
+        else:
+            tamat = tengah - 1
+            tengah = (mulai + tamat)//2
+            
+    print("Sesudah di Sorting: ", l)
+    return (f, posisi-1)
+l = [2,15,23,28,31,34,56,87,89,200]
+num = int(input("masukan angka:"))
+f = binary_search(l, num)
+if f[0]:
+    print('Nomor %d ditemukan di posisi %d'%(num, f[1]+2))
+else:
+    print('Nomor %d tidak ditemukan'%num)
