@@ -1,0 +1,35 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Dec 5 20:12:26 2021
+NIM : 065002100027
+@author: Debi Arisandi
+
+"""
+print ("hi welcome to my progam")
+
+class y:
+        def __init__(self, letak):
+                self.letak = letak
+                self.length = len(letak)
+        def __str__(self):
+                return " ".join([str(y)
+                                         for y in self.letak])
+        def fungsirekursif(self, a=None):
+                if a is None:
+                         a = self.length
+                if a == 1:
+                        return
+                for b in range(a - 1):
+                         if self.letak[b] > self.letak[b + 1]:
+                             self.letak[b], self.letak[b +1] = self.letak[b + 1], self.letak[b]
+                             self.fungsirekursif(a - 1)
+def utama():
+    letak = [3,-2,9,8,5,4,1]
+    mut =y(letak)
+    mut.fungsirekursif()
+    print("list yang udah disorting :\n", mut)
+if __name__ == "__main__":
+    utama()
+ 
+print ("Thank you")
+       
