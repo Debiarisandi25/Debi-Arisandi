@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 11:52:34 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+latihan Praktikum Algoritma Dan Pemograman 
+
+"""
+
+print("hello welcome to my progam")
+
+class Mahasiswa:
+    mhswCount = 0
+
+    def __init__(self, nama,nim,angkatan):
+        self.nama= nama
+        self.nim= nim
+        self.angkatan=tahun
+        Mahasiswa.mhswCount +=1
+
+    def biodata(self):
+       print("\nNama :",self.nama,"\nNim :",self.nim,"\nAngkatan : ", self.angkatan)
+
+nama=input("masukan nama kamu: ")
+nim=input("masukan nim kamu: ")
+tahun=input("masukan tahun angkatan kamu: ")
+mhsw1=Mahasiswa(nama,nim,tahun)
+mhsw1.biodata()
+
+print("jumlah mahasiswa yang terdata adalah: ",Mahasiswa.mhswCount)
