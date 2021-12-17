@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Dec 17 08:04:32 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+Latihan Praktikum Pemograman dan Algoritma 
+
+"""
+
+import pandas as pd
+
+
+df = pd.read_csv("C:/kuliah/semester 1/Algoritma/Negara.csv")
+data = pd.DataFrame(df)
+rerata= df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print(data)
+print("\nberikut data mean:")
+print(rerata)
+print('\nberikut data standard deviation:')
+print(std)
