@@ -1,0 +1,38 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 22 13:34:19 2021
+
+@author: Debi Arisandi
+Nim : 065002100027
+Prodi : Sistem Informasi
+laporan Praktikum Algoritma dan Pemograman 
+
+"""
+
+import pandas as pd 
+def STD (folder):
+    file = open ("Negarastandardeviasi.csv","w")
+    file.write(folder)
+    file.close()
+    
+def MEAN(folder):
+    file = open("NegaraMean.csv","w")
+    file.write(folder)
+    file.close
+
+folder = pd.read_csv("C:/kuliah/semester 1/Algoritma/Negara.csv")
+df=pd.DataFrame(folder)
+rerata = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+print("berikut adalah data framenya:\n")
+print(df)
+print("\nBerikut data mean:")
+print(rerata)
+print("\nberikut data standar deviation:")
+print(std)
+STD(str(std))
+MEAN(str(rerata))
+print("\nfile berhasil dibuat")
+
+    
