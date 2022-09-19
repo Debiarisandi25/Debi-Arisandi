@@ -1,1 +1,9 @@
 D:/Modul 1 Statiska.R
+data_deby = read.csv("C:/Users/HP/Bahan Aslab Statistika 2021/debi_prak1.csv", header=TRUE, sep=";")
+View(data_deby)
+mean(data_deby$Tinggi.Badan)
+str(data_deby)
+
+install.packages("xlsx")
+library("xlsx")
+data_deby=read.xlsx("C:/Users/HP/Bahan Aslab Statistika 2021/debi_prak1.xlsx",1)
