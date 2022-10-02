@@ -1,0 +1,24 @@
+data_ibi =read.csv("C:/Users/HP/Bahan Aslab Statistika 2021/Modul3.csv")
+View(data_ibi)
+ibi <- data_ibi[4]  
+View(ibi)
+ibi$Tingi.Badan<-ifelse(ibi$Tinggi.Badan>160,c("Tinggi"),c("Pendek"))
+View(ibi)
+ibi$newvariable <- ifelse(ibi$jurusan> 2, c("large"), c("small")) 
+View(ibi)
+
+ibi$jurusan <- c("Infor21")
+ibi$fakultas <- c("FTI")
+View(ibi)
+ibi$fakultas <- NULL
+View(ibi)
+data_ibi.kolom1dan2 <- data_ibi[,1:2] 
+data_ibi.kolom3dan4 <- data_ibi[,3:4] 
+data_ibi.kolom1sd4<-cbind(data_ibi.kolom1dan2, data_ibi.kolom3dan4)
+View(data_ibi.kolom1sd4)
+data_ibi.baris1sd5 <- data_ibi[1:5,] 
+data_ibi.baris25sd30 <- data_ibi[25:30,] 
+data_ibi.baris1sd30 <- rbind(data_ibi.baris1sd5, data_ibi.baris25sd30) 
+View(data_ibi.baris1sd30)
+data_ibi.sort<-data_ibi[order(data_ibi$waktu.perjalanan),] 
+View(data_ibi.sort)
