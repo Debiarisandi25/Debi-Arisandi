@@ -1,0 +1,5 @@
+Debiii=read.delim("clipboard")
+View(Debiii)
+str(Debiii)
+mean(Debiii$penghasilan)
+t.test(Debiii$penghasilan, mu=14500)
