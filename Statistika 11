@@ -1,0 +1,8 @@
+df_debi=read.delim("clipboard")
+head(df_debi)
+model <- aov(weight~group, data=df_debiii)
+summary(model)
+tukey.test <- TukeyHSD(model)
+tukey.test
+df_debiii=PlantGrowth
+View(df_debiii)
