@@ -1,0 +1,16 @@
+df_debi=read.delim("clipboard")
+head(df_debi)
+model_reg=lm(df_debi$y~df_debi$x)
+summary(model_reg)
+
+
+df_debii=read.delim("clipboard")
+df_debii$brick_dummy <- ifelse(df_debii$Brick == "Yes", 1,0)
+df_debii$N_dummy1 <- ifelse(df_debii$Neighborhood == "West", 1,0)
+df_debii$N_dummy2 <- ifelse(df_debii$Neighborhood == "North", 1,0)
+model=lm(df_debii$Price~df_debii$SqFt+df_debii$Bedrooms+df_debii$Bathrooms+df_debii$brick_dummy+df_debii$N_dummy1+df_debii$N_dummy2)
+summary(model)
+
+
+by(df_debii$Price, df_debii$Neighborhood, mean)
+by(df_debii$Price, df_debii$Brick, mean)
