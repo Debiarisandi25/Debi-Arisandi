@@ -1,0 +1,20 @@
+Dataku_deby = read.delim("clipboard")
+wilcox.test(Dataku_deby$Ganjil,Dataku_deby$Genap,paired=TRUE)
+
+df_deby=read.delim("clipboard")
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_deby$placebo)
+# where y is numeric and A is A binary factor
+head(df_deby)
+rank(df_deby$placebo)
+
+dataku_debi = read.delim("clipboard")
+View(dataku_debi)
+wilcox.test(dataku_debi$Sebelum,dataku_debi$Sesudah,paired=TRUE)
+
+df_debi=read.delim("clipboard")
+# independent 2-group Mann-Whitney U Test
+wilcox.test(df_debi$obat~df_debi$grup)
+# where y is numeric and A is A binary factor
+head(df_debi)
+rank(df_debi$obat)
